@@ -3,7 +3,8 @@ requirejs.config({
   paths: {
     'jquery': 'libs/jquery-1.9.1.min',
     'Backbone': 'libs/backbone-min',
-    'underscore': 'libs/underscore-min'
+    'underscore': 'libs/underscore-min',
+    'Skin': '../../../dist/skin-min'
   },
   shim: {
     'Backbone': {
@@ -12,6 +13,10 @@ requirejs.config({
     },
     'underscore': {
       exports: '_'
+    },
+    'Skin': {
+      deps: ['Backbone'],
+      exports: 'Skin'
     }
   }
 });

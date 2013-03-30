@@ -6,4 +6,4 @@ tools/closure-library/closure/bin/calcdeps.py -i src/skin.js \
 -o compiled \
 -c tools/closure/compiler.jar \
 -f "--compilation_level=ADVANCED_OPTIMIZATIONS" \
-> dist/skin.js
+> dist/skin-min.js
